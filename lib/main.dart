@@ -1,3 +1,5 @@
+import 'package:chat_supabase/constants.dart';
+import 'package:chat_supabase/view/splash/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart' as dotenv;
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -21,13 +23,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-      
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: null,
+      theme: appTheme,
+      home: const SplashPage(),
     );
   }
 }

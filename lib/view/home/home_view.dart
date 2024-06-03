@@ -10,12 +10,14 @@ class HomeView extends StatelessWidget {
     return Scaffold(
 
     appBar: AppBar(
-      title: Text('Scroll'),
+      title: const Text('Scroll'),
       
     ),
     body: CustomScrollView(
       slivers: [
         SliverList(delegate: SliverChildBuilderDelegate((context, index){
+          return null;
+        
 
         },
         childCount: demo.length
