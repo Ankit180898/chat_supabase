@@ -129,7 +129,7 @@ class _MessageBarState extends State<_MessageBar> {
                   autofocus: true,
                   controller: _textController,
                   decoration: const InputDecoration(
-                    hintText: 'Type a message',
+                    hintText: 'Send a message',
                     border: InputBorder.none,
                     focusedBorder: InputBorder.none,
                     contentPadding: EdgeInsets.all(8),
